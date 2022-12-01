@@ -1,0 +1,182 @@
+*{
+   
+   
+    margin: 0;
+    padding:0;
+}
+
+.navbar-brand
+{
+    border-radius: 20px;font-family: 'Potta One', cursive;
+}
+
+
+.hoverme
+{
+    
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+.hoverme::after
+{
+    content: "";
+    display: block;
+    background-color: white;
+    transition: width .3;
+    width: 0%;
+    height: 3px;
+}
+.hoverme:hover::after
+{
+    width: 100%;
+    transition: width .6s;
+}
+
+
+.heading-1
+{
+    font-family: 'Poppins', sans-serif;
+    color:orange;
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    width: 100%;
+}
+@media screen and (max-width:1520px){
+
+    .heading-1{
+        font-size: 30px
+    }
+}
+@media screen and (max-width:1124px){
+
+    .heading-1{
+        font-size: 25px
+    }
+}
+@media screen and (max-width:592px){
+
+    .heading-1{
+        font-size: 15px
+    }
+}
+.btn-group.mt-3 button{
+    border-radius: 20PX
+}
+.btn-group.mt-3{
+
+    position: absolute;
+    top:66%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.Poster_img .heading-1{
+
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.jumbotron > p
+{
+ 
+    margin-top: 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+   text-align: center;
+
+}
+.heading-2 h1{
+    display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.heading-2 h1::before, .heading-2 h1::after{
+    content: "";
+    BORDER-TOP:6PX DOUBLE;
+}
+
+html
+{
+    scroll-behavior:smooth;
+
+}
+
+/* media for video carts */
+@media screen and (max-width:992px){
+.col-lg-3.col-sm-12.col-md-6{
+
+    margin-top:20px
+}
+}
+
+
+
+/* CSS FOR CONTACT US PAGE/ */
+.form{
+    width: 100%;
+height: auto;
+box-shadow: 2px 3px 17px -2px lightgrey;
+margin-block: 128px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+margin-inline: auto;
+}
+@media all and (max-width:992px){
+    .form{
+        width: 100%;
+    }
+}
+.contact{
+    font-size: 50px;
+    
+}
+.contact-wrapper
+{
+    margin-block:-59px;
+}
+
+.contact-wrapper .col-md-6
+{
+    margin-block:auto;
+    /* display: flex; 
+    flex-direction: column;
+    justify-content: center; */
+}
+
+
+
+
+
+.description {
+    padding-block: 30px;
+    margin: 50px;
+    max-width: 400px;
+}
+
+.description h3 {
+    padding-top: 35px;
+    font-size: 50px;
+}
+
+.description button{
+    background-color: #26201e;
+    width: 30%;
+    border-radius:none;
+    color: white;
+    font-weight: bold;
+    padding-block: 8px;
+}
+
+
+@media only screen and (max-width:770px){
+    .contact-wrapper{
+        margin-block-start: 70px;
+    }
+}
